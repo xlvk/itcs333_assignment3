@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UOB Students</title>
+    <title>UOB Students Enrollment</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 </head>
 <body>
     <main class="container">
-        <h1 style="text-align: center;">University of Bahrain Students Enrollment by Nationality</h1>
-        <table role="grid">
-            <thead>
-                <tr id="tableHeader">
-                    <!-- Headers will be inserted here by JavaScript -->
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <!-- Data rows will be inserted here by JavaScript -->
-            </tbody>
-        </table>
+        <h1 class="text-center style='text-align: center;'">University of Bahrain Students Enrollment by Nationality</h1>
+        <div class="overflow-auto">
+            <table class="table" role="grid">
+                <thead>
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Programs</th>
+                        <th scope="col">Nationality</th>
+                        <th scope="col">College</th>
+                        <th scope="col">Number of Students</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data rows will be dynamically injected -->
+                </tbody>
+            </table>
+        </div>
     </main>
-    <script src="app.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
